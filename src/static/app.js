@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
-        // Create participants list
         const participantsList = details.participants.length
           ? `<ul>${details.participants.map(participant => `<li>${participant}</li>`).join("")}</ul>`
           : "<p>No participants yet.</p>";
